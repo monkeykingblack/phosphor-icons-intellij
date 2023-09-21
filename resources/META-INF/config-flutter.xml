@@ -1,0 +1,10 @@
+<idea-plugin>
+    <depends>Dart</depends>
+    <extensions defaultExtensionNs="com.intellij">
+        <codeInsight.lineMarkerProvider language="Dart"
+                                  implementationClass="com.github.phosphorIntellij.lang.dart.PhosphorDartIconLineMarkerProvider"/>
+    </extensions>
+    <extensions defaultExtensionNs="Dart">
+        <completionExtension implementation="com.github.phosphorIntellij.lang.dart.PhosphorDartCompletionContributor" order="last"/>
+    </extensions>
+</idea-plugin>

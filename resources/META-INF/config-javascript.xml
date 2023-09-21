@@ -1,0 +1,15 @@
+<idea-plugin>
+    <depends>JavaScript</depends>
+    <extensions defaultExtensionNs="com.intellij">
+        <completion.contributor language="any"
+                                implementationClass="com.github.phosphorIntellij.lang.javascript.PhosphorJSCompletionContributor"
+                                order="before JSPatternBasedCompletionContributor, before JSCompletionContributor, before xmlNonFirst, before cssClassOrIdReferenceCompletionContributor"
+        />
+
+        <annotator language="TypeScript"
+                   implementationClass="com.github.phosphorIntellij.lang.javascript.PhosphorJSLineAnnotator"
+        />
+    </extensions>
+    x
+
+</idea-plugin>

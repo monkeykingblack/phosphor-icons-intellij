@@ -1,0 +1,20 @@
+<idea-plugin>
+    <id>com.github.phosphorIntellij</id>
+    <name>Phosphor Icons</name>
+    <description>
+        <![CDATA[
+        <p>Support to display icon in code completion for <a href="https://phosphoricons.com/">Phosphor Icons<a/></p>
+        <br>
+        <p>Plugin now just working with Phosphor Flutter package. With Phosphor NPM package may be someday :)</p>
+    ]]>
+    </description>
+    <vendor>Phosphor Icons</vendor>
+    <category>Custom Languages</category>
+    <version>SNAPSHOT</version>
+    <idea-version since-build="223"/>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.java</depends>
+    <depends optional="true" config-file="config-flutter.xml">io.flutter</depends>
+    <depends optional="true" config-file="config-javascript.xml">JavaScript</depends>
+</idea-plugin>
